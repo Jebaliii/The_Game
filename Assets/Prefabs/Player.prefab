@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5337270173960964405}
   - component: {fileID: 8295525021137659097}
   - component: {fileID: 6504433311263996798}
-  - component: {fileID: 8757946857126603015}
   - component: {fileID: 3307781011740100551}
   - component: {fileID: 3278406223885055534}
   m_Layer: 0
@@ -168,28 +167,8 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
---- !u!114 &8757946857126603015
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4167344890842154825}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 637faa9247e5820438e6295452341133, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  moveSpeed: 4
-  attackRange: 0.6
-  attackDistance: 0.6
-  attackDamage: 1
-  attackCooldown: 0.4
-  monsterLayer:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!114 &3307781011740100551
 MonoBehaviour:
   m_ObjectHideFlags: 0
