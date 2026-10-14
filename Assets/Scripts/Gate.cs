@@ -14,5 +14,6 @@ public class Gate : MonoBehaviour
             GameState.hasKey = false;   // the key is used
             SceneManager.LoadScene(nextScene);
         }
+        else if (collision.collider.CompareTag("Player")) MessageUI.Show("Locked! Find the key first.");
     }
 }

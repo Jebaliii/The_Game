@@ -31,6 +31,7 @@ public class PressurePlate : MonoBehaviour
 
             if (bridge != null) bridge.SetActive(true);
             if (waterBlock != null) waterBlock.SetActive(false);
+            MessageUI.Show("A bridge appears over the river!");
 
             GameState.score += scoreReward;
         }
