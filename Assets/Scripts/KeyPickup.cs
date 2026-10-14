@@ -12,6 +12,7 @@ public class KeyPickup : MonoBehaviour
             GameState.hasKey = true;
             GameState.score += value;
             MessageUI.Show("You found the key!");
+            SoundFX.PlayKey();
             Destroy(gameObject);
         }
     }

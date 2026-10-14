@@ -70,6 +70,7 @@ public class Monster : MonoBehaviour
         if (health <= 0)
         {
             GameState.score += scoreValue;
+            SoundFX.PlayMonsterKilled();
             Destroy(gameObject);
             return;
         }

@@ -11,6 +11,7 @@ public class Coin : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             GameState.score += value;
+            SoundFX.PlayCoin();
             Destroy(gameObject);
         }
     }

@@ -33,6 +33,7 @@ public class PlayerHealth : MonoBehaviour
         invincibleUntil = Time.time + invincibleTime;
 
         GameState.hearts = Mathf.Max(0, GameState.hearts - amount);   // never below 0
+        SoundFX.PlayHurt();
         StartCoroutine(Blink());
 
         if (GameState.hearts == 0)
