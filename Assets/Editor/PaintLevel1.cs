@@ -41,7 +41,7 @@ public static class PaintLevel1
         if (ground == null || decorations == null || walls == null) return;
 
         TileBase grass = LoadTile(0);
-        TileBase tree = LoadTile(16);
+        TileBase tree = LoadTile(28);
         TileBase flowers = LoadTile(2);
         TileBase mushrooms = LoadTile(29);
         if (grass == null || tree == null || flowers == null || mushrooms == null) return;
