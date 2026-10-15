@@ -4,11 +4,11 @@ using TMPro;
 
 // Shows score, hearts and key on the screen.
 // Put this script on the Canvas of each level.
-// Level 1 uses the new HUD bar fields, Level 2 uses the old text fields.
+// Level 1 and Level 2 use the HUD bar fields (the old text fields are not used anymore).
 // Any field left empty is simply skipped.
 public class HUD : MonoBehaviour
 {
-    [Header("Old texts (Level 2)")]
+    [Header("Old texts (not used)")]
     public TMP_Text scoreText;
     public TMP_Text heartsText;
     public TMP_Text keyText;   // optional

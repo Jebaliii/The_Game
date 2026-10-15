@@ -14,6 +14,10 @@ public class PlayerHealth : MonoBehaviour
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
+
+        // Difficulty: more time to escape after a hit in Easy, less in Hard
+        if (GameState.difficulty == GameState.Easy) invincibleTime *= 1.5f;
+        else if (GameState.difficulty == GameState.Hard) invincibleTime *= 0.6f;
     }
 
     // Called every frame while touching something
@@ -34,6 +38,7 @@ public class PlayerHealth : MonoBehaviour
 
         GameState.hearts = Mathf.Max(0, GameState.hearts - amount);   // never below 0
         SoundFX.PlayHurt();
+        CameraFollow.Shake(0.1f, 0.2f);
         StartCoroutine(Blink());
 
         if (GameState.hearts == 0)

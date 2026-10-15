@@ -3,7 +3,7 @@ using UnityEngine;
 // Plays the short sound effects of the game.
 // Put it on one object in the scene and drag the 4 sounds into its fields.
 // Other scripts call for example: SoundFX.PlayCoin();
-// If there is no SoundFX in the scene (like Level 2), nothing happens.
+// If there is no SoundFX in the scene (like the menu scenes), nothing happens.
 public class SoundFX : MonoBehaviour
 {
     public AudioClip coin;
